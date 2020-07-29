@@ -16,6 +16,14 @@ body {
   background: #250d46;
 }
 
+.font-30 {
+  font-size: 30px;
+}
+
+.my-20 {
+  padding: 20px 0;
+}
+
 .button {
   background-color: none;
   border: none;
@@ -36,6 +44,26 @@ body {
 
 .button-info {
   background-color: var(--color-green);
+}
+
+.color-green {
+  color: var(--color-green);
+}
+
+.color-red {
+  color: var(--color-red);
+}
+
+.color-light {
+  color: var(--color-light);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 .menu {
@@ -186,19 +214,55 @@ body {
 .container-fluid .content table {
   position: relative;
   width: 100%;
+  margin: auto;
+  margin-bottom: 30px;
   border-collapse: collapse;
   color: #eee;
   font-family: roboto;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.container-fluid .content table thead tr {
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .container-fluid .content table thead tr th {
-  font-family: roboto !important;
+  font-family: calibri !important;
+  padding: 10px;
+}
+
+.container-fluid .content table thead tr th:first-child {
+  border-left: 10px solid #00c3ff;
 }
 
 .container-fluid .content table tbody tr {
   text-align: left;
   position: relative;
   padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.container-fluid .content table tbody tr td {
+  padding: 5px;
+}
+
+.container-fluid .content table tbody tr td:first-child {
+  border-left: 10px solid #00c3ff;
+}
+
+.container-fluid .content table tbody tr .delete {
+  opacity: 0;
+}
+
+.container-fluid .content table tbody tr:hover {
+  background-color: #666;
+}
+
+.container-fluid .content table tbody tr:hover .delete {
+  opacity: 1;
 }
 
 .container-fluid .content table tbody tr:nth-child(even) {

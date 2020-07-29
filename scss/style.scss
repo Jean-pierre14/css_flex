@@ -16,6 +16,16 @@ body {
     background: rgb(37, 13, 70);
 }
 
+// Fonts
+.font-30 {
+    font-size: 30px;
+}
+
+// Margins
+.my-20 {
+    padding: 20px 0;
+}
+
 // Buttons
 .button {
     background-color: none;
@@ -40,6 +50,30 @@ body {
 }
 
 // Buttons
+// Colors
+.color-green {
+    color: var(--color-green);
+}
+
+.color-red {
+    color: var(--color-red);
+}
+
+.color-light {
+    color: var(--color-light);
+}
+
+// Colors
+// Texts config
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+// Texts config
 .menu {
     position: relative;
     display: block;
@@ -172,16 +206,45 @@ body {
     .content table {
         position: relative;
         width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
         border-collapse: collapse;
         color: #eee;
         font-family: roboto;
+        text-align: left;
+        border-collapse: collapse;
+        thead tr {
+            border-radius: 4px;
+            overflow: hidden;
+        }
         thead tr th {
-            font-family: roboto !important;
+            font-family: calibri !important;
+            padding: 10px;
+        }
+        thead tr th:first-child {
+            border-left: 10px solid rgb(0, 195, 255);
         }
         tbody tr {
             text-align: left;
             position: relative;
             padding: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            td {
+                padding: 5px;
+            }
+            td:first-child {
+                border-left: 10px solid rgb(0, 195, 255)
+            }
+        }
+        tbody tr .delete {
+            opacity: 0;
+        }
+        tbody tr:hover {
+            background-color: #666;
+        }
+        tbody tr:hover .delete {
+            opacity: 1;
         }
         tbody tr:nth-child(even) {
             position: relative;
