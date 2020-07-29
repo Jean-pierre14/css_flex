@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+body {
+  position: relative;
+  background: #250d46;
+}
+
 .menu {
   position: relative;
   display: block;
@@ -18,22 +23,23 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
-  align-items: start;
+  background: var(--color-light);
 }
 
 .menu .logo {
   position: relative;
   text-decoration: none;
   color: var(--color-red);
+  padding: 10px;
 }
 
 .menu ul {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin-right: 30px;
 }
 
 .menu ul li {
@@ -48,6 +54,32 @@
   padding: 10px 20px;
   background: var(--color-light);
   box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+.menu ul li a:hover,
+.menu ul li a.active {
+  background-color: var(--color-red);
+  color: var(--color-light);
+}
+
+.menu button {
+  position: relative;
+  display: block;
+}
+
+.menu button span {
+  position: absolute;
+  width: 90%;
+  height: 3px;
+  background-color: #eee;
+  margin: 5px auto;
+}
+
+@media (max-width: 700) {
+  .menu body {
+    background-color: #1f1353;
+  }
 }
 
 .button-red {
@@ -92,6 +124,7 @@
 .container .content .card .card-body {
   position: relative;
   padding: 10px;
+  background-color: var(--color-light);
 }
 
 .container .content .card .card-body h3 {

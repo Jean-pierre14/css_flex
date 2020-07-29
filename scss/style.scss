@@ -10,6 +10,11 @@
     box-sizing: border-box;
 }
 
+body {
+    position: relative;
+    background: rgb(37, 13, 70);
+}
+
 .menu {
     position: relative;
     display: block;
@@ -18,19 +23,21 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
-    align-items: start;
+    background: var(--color-light);
+    // align-items: start;
     .logo {
         position: relative;
         text-decoration: none;
         color: var(--color-red);
+        padding: 10px;
     }
     ul {
         position: relative;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         align-content: center;
+        margin-right: 30px;
     }
     ul li {
         position: relative;
@@ -43,6 +50,28 @@
         padding: 10px 20px;
         background: var(--color-light);
         box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+        transition: 0.5s;
+    }
+    ul li a:hover,
+    ul li a.active {
+        background-color: var(--color-red);
+        color: var(--color-light);
+    }
+    button {
+        position: relative;
+        display: block;
+        span {
+            position: absolute;
+            width: 90%;
+            height: 3px;
+            background-color: #eee;
+            margin: 5px auto;
+        }
+    }
+    @media(max-width: 700) {
+        body {
+            background-color: rgb(31, 19, 83);
+        }
     }
 }
 
@@ -81,6 +110,7 @@
             .card-body {
                 position: relative;
                 padding: 10px;
+                background-color: var(--color-light);
                 h3 {
                     font-style: italic;
                     font-size: 30px;
