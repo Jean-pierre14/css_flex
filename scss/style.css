@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Raleway:ital,wght@0,100;0,200;0,500;0,600;0,700;1,100;1,200;1,500;1,600&display=swap");
 :root {
   --color-red: #aa0000;
   --color-green: #159b03;
@@ -13,6 +14,28 @@
 body {
   position: relative;
   background: #250d46;
+}
+
+.button {
+  background-color: none;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 4px;
+  color: var(--color-light);
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus,
+.button:visited,
+.button:active {
+  opacity: 0.9;
+}
+
+.button-info {
+  background-color: var(--color-green);
 }
 
 .menu {
@@ -146,4 +169,39 @@ body {
   background-color: var(--color-red);
   color: var(--color-light);
   cursor: pointer;
+}
+
+.container-fluid {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.container-fluid .content {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.container-fluid .content table {
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
+  color: #eee;
+  font-family: roboto;
+}
+
+.container-fluid .content table thead tr th {
+  font-family: roboto !important;
+}
+
+.container-fluid .content table tbody tr {
+  text-align: left;
+  position: relative;
+  padding: 10px;
+}
+
+.container-fluid .content table tbody tr:nth-child(even) {
+  position: relative;
+  background: #666;
 }
