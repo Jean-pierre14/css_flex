@@ -16,6 +16,10 @@ body {
   background: #250d46;
 }
 
+.bg-primary {
+  background-color: #00c3ff;
+}
+
 .font-30 {
   font-size: 30px;
 }
@@ -268,4 +272,106 @@ body {
 .container-fluid .content table tbody tr:nth-child(even) {
   position: relative;
   background: #666;
+}
+
+.grid-2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.grid-2-1 div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.grid-2-1 div:nth-child(1) img {
+  height: 350px;
+}
+
+.grid-2-1 input,
+.grid-2-1 textarea {
+  background: none !important;
+  color: #ccc;
+}
+
+.form-group {
+  display: block;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.form-group label {
+  font-family: calibri !important;
+  display: block;
+  color: #999;
+  font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 7px;
+  outline: none !important;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.footer div {
+  position: relative;
+  margin: 10px;
+  width: 320px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-overflow: clip;
+  color: #eee;
+  padding: 10px;
+  overflow: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer div h3,
+.footer div p,
+.footer div button {
+  font-family: calibri;
+}
+
+.footer div button {
+  margin: 20px 0;
+  width: 100%;
+}
+
+footer {
+  position: relative;
+  padding: 100px;
+  color: #ccc;
+  background-color: #666;
+}
+
+::-webkit-scrollbar {
+  background-color: #3c1ebe;
+  width: 5px;
+  color: #fff;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #eee;
+  border-radius: 10px;
 }
